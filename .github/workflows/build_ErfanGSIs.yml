@@ -5,12 +5,12 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://cfhcable.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/20.8.6/xiaomi.eu_multi_MIMAX3_20.8.6_v12-10.zip
+  ROM_URL: https://download.c.realme.com/osupdate/RMX1971_11_OTA_1140_all_RPAoiPzVQtlc.ozip
   ROM_NAME: MIUI
-  BUILD_AB: false
-  BUILD_AONLY: true
+  BUILD_AB: true
+  BUILD_AONLY: false
   ROM_AONLY: MAX3_Aonly_20.8.6-eu.7z
-  ROM_AB: K20P_AB_20.7.16-eu.7z
+  ROM_AB: RMX1971-C13-1130.7z
 
 jobs:
   build:
@@ -38,11 +38,19 @@ jobs:
        - name: Clone ErfanGSI Source Code
          run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
        
-       - name: Setting up ErfanGSI requirements
+       - name: Use Xiaoxin SGSI build tool Script
          run: |
-              sudo chmod -R 777 ErfanGSIs
+              sudo rm -rf $GITHUB_WORKSPACE/ErfanGSIs/setup.sh
+              sudo cp -r setup.sh $GITHUB_WORKSPACE/ErfanGSIs
+              sudo chmod 777 -R $GITHUB_WORKSPACE/ErfanGSIs
               cd ErfanGSIs
+              mkdir ./output
               sudo bash setup.sh
+       
+       - name: Fix exit
+         run: |
+              sed -i 's/\|\| exit 1//g' $GITHUB_WORKSPACE/ErfanGSIs/url2GSI.sh
+              sed -i 's/exit 1//g' $GITHUB_WORKSPACE/ErfanGSIs/url2GSI.sh
        
        - name: Download Stock Rom & Generate Aonly GSI
          if: env.BUILD_AONLY == 'true'
