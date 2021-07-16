@@ -5,8 +5,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.c.realme.com/osupdate/RMX1851_11_OTA_1130_all_iuygSyEV1LmI.ozip
-  ROM_NAME: Generic
+  ROM_URL: http://bigota.d.miui.com/V11.0.3.0.PFJCNXM/miui_DAVINCI_V11.0.3.0.PFJCNXM_104ec46429_9.0.zip
+  ROM_NAME: MIUI
   BUILD_AB: true
   BUILD_AONLY: false
   ROM_AONLY: MAX3_Aonly_20.8.6-eu.7z
