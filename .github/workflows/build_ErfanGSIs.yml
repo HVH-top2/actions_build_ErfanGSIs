@@ -5,7 +5,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.c.realme.com/osupdate/RMX1971_11_OTA_1140_all_RPAoiPzVQtlc.ozip
+  ROM_URL: https://download.c.realme.com/osupdate/RMX1851_11_OTA_1130_all_iuygSyEV1LmI.ozip
   ROM_NAME: MIUI
   BUILD_AB: true
   BUILD_AONLY: false
