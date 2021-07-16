@@ -6,7 +6,7 @@ on:
     
 env:
   ROM_URL: https://download.c.realme.com/osupdate/RMX1851_11_OTA_1130_all_iuygSyEV1LmI.ozip
-  ROM_NAME: MIUI
+  ROM_NAME: Generic
   BUILD_AB: true
   BUILD_AONLY: false
   ROM_AONLY: MAX3_Aonly_20.8.6-eu.7z
