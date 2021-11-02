@@ -5,12 +5,12 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://www.realme.com/cn/support/software-update#
+  ROM_URL: https://coloroswebsitefs.coloros.com/coloroswebsite-coloros-com/grs_20201028113724/PAAM00_11_OTA_2210_all_R9HZmKj9blSy.ozip
   ROM_NAME: Generic
   BUILD_AB: true
   BUILD_AONLY: false
-  ROM_AONLY: RealemeX15.7z
-  ROM_AB: RealemeX15.7z
+  ROM_AONLY: OPPOR15.7z
+  ROM_AB: OPPOR15.7z
 
 jobs:
   build:
