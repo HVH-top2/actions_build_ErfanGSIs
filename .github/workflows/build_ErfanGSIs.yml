@@ -5,12 +5,12 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://we.tl/t-HLHUfOh6Xi
+  ROM_URL: https://bigota.d.miui.com/V12.5.3.0.QFGCNXM/miui_LAVENDER_V12.5.3.0.QFGCNXM_964faa8ebc_10.0.zip
   ROM_NAME: MIUI
   BUILD_AB: true
   BUILD_AONLY: false
-  ROM_AONLY: MI6X.7z
-  ROM_AB: MI6X.7z
+  ROM_AONLY: Redminote7.7z
+  ROM_AB: Redminote7.7z
 
 jobs:
   build:
