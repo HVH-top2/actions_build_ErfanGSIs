@@ -5,9 +5,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://static-yz-cdn.c-t.work/QN_FOG_56a79866-a4af-4b0a-bb1f-dc64ac8fe0d4%2F9fe819aa-70df-4af9-b036-51fa33d1c768%2FOLX_MiuiCY_raphael_21.11.1_57271d0.zip?t-s=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6Imlsb3ZlY293dHJhbnNmZXIyMDIxXzE2MzY4MDczMzg2NzIifQ.yzNo0ceEgflr3JLCvohahiPU8S_ZeEXVrV5K1q-DoyY&t-c=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6IjIwMjF8MTF8MTN8MjAifQ.QBOEcIMydrU-LoaCUW6kssYiMe0jPhzfPGyx9mK2qSc&user=56a79866-a4af-4b0a-bb1f-dc64ac8fe0d4&ut=0&rt=0&rk=ff_3b416960-d98b-47b7-89e3-303ad01a1d45&owner=56a79866-a4af-4b0a-bb1f-dc64ac8fe0d4&attname=OLX_MiuiCY_raphael_21.11.1_57271d0.zip
+  ROM_URL: https://fsopen.coloros.com/3/oppowww/androidrom/pclm10/PCLM10_11_OTA_0120_all_Kstg2TogR7P7.ozip
 
-  ROM_NAME: MIUI
+  ROM_NAME: ColorOS
   BUILD_AB: true
   BUILD_AONLY: false
   ROM_AONLY: k20pro.7z
